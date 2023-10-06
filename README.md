@@ -1,4 +1,49 @@
-## FRs (Functional requirements)
+# API S.O.L.I.D. Ignite
+
+## :computer: Technologies:
+
+- TypeScript
+- Prisma
+- Fastify
+- Node.js
+- PostgreSQL
+- Docker
+
+## :construction_worker: Steps to use:
+
+### Installation:
+
+```bash
+  # NPM/PNPM
+  npm/pnpm i
+
+  # Yarn
+  yarn
+```
+
+### Setting .env file
+
+```bash
+   ## Get the environment variable of .env.example file and use it in .env file filling with your credentials
+
+  cp .env.example .env
+```
+
+### Running the application
+
+```bash
+  # NPM
+  npm run start:dev
+
+  # Yarn
+  yarn start
+
+  # PNPM
+  pnpm start
+```
+## Requirements
+
+### FRs (Functional requirements)
 
 - [ ] It should be possible to create a new user
 - [ ] It should be possible to authenticate an existing user
@@ -11,7 +56,7 @@
 - [ ] It should be possible to validate a check-in of an existing user
 - [ ] It should be possible to register a new gym
 
-## Business rules (BRs)
+### Business rules (BRs)
 
 - [ ] The user should not be able to register yourself with the same email
 - [ ] The user should not be able to do two check-ins in the same day
@@ -20,9 +65,13 @@
 - [ ] The check-in only be able to be validated by admin
 - [ ] The Gym only be able to be registered by admin
 
-## Non-functional requirements (NFRs)
+### Non-functional requirements (NFRs)
 
 - [ ] The user password need to be encrypted
 - [ ] The application data need to be persisted in a PostgreSQL database
 - [ ] All data list need to be paginated with 20 items per page
 - [ ] The user must be indicated by a JWT
+
+## :memo: LICENSE
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE.md) file for details
