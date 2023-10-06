@@ -29,6 +29,22 @@
   cp .env.example .env
 ```
 
+### Running the container
+
+```bash
+  docker-compose up
+
+  ## Or
+
+  docker compose up
+```
+
+### Running the database
+
+```bash
+  npx prisma migrate dev
+```
+
 ### Running the application
 
 ```bash
@@ -74,4 +90,4 @@
 
 ## :memo: LICENSE
 
-This project is licensed under the MIT license. See the [LICENSE](LICENSE.md) file for details
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for details
