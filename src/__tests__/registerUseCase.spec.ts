@@ -15,7 +15,7 @@ describe("Register Use Case", async () => {
       password: "any_password",
     });
 
-    expect(user).toEqual(expect.any(String));
+    expect(user.id).toEqual(expect.any(String));
   });
 
   it("should hash user password upon registration", async () => {
@@ -46,12 +46,12 @@ describe("Register Use Case", async () => {
       password: "any_password",
     });
 
-    expect(async () => {
+    expect(() =>
       registerUseCase.execute({
         name: "any_name",
         email: "any_email",
         password: "any_password",
-      });
-    }).rejects.toBeInstanceOf(UserAlreadyExistsError);
+      })
+    ).rejects.toBeInstanceOf(UserAlreadyExistsError);
   });
 });
