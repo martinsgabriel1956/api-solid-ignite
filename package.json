@@ -9,7 +9,8 @@
     "start": "node build/server.js",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@types/node": "^20.8.2",
     "@typescript-eslint/eslint-plugin": "6.7.4",
     "@typescript-eslint/parser": "6.7.4",
+    "@vitest/ui": "0.34.6",
     "eslint": "8.50.0",
     "prisma": "5.4.1",
     "tsup": "^7.2.0",
