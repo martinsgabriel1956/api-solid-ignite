@@ -63,7 +63,7 @@
 ### FRs (Functional requirements)
 
 - [x] It should be possible to create a new user
-- [ ] It should be possible to authenticate an existing user
+- [x] It should be possible to authenticate an existing user
 - [ ] It should be possible to get the perfil of an logged user
 - [ ] It should be possible to get the number of check-ins of an logged user
 - [ ] It should be possible for the logged-in user to get your own check-ins history
