@@ -1,4 +1,4 @@
-import { InvalidCredentialsError } from "@/errors/invalidCredentialsError";
+import { InvalidCredentialsError } from "@/errors/useCases/invalidCredentialsError";
 import { InMemoryUsersRepository } from "@/repositories/inMemory/InMemoryUsersRepository";
 import { AuthenticateUseCase } from "@/useCases/auth";
 import { hash } from "bcryptjs";

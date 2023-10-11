@@ -1,4 +1,4 @@
-import { UserAlreadyExistsError } from "@/errors/UserAlreadyExistsError";
+import { UserAlreadyExistsError } from "@/errors/useCases/UserAlreadyExistsError";
 import { InMemoryUsersRepository } from "@/repositories/inMemory/InMemoryUsersRepository";
 import { RegisterUseCase } from "@/useCases/register";
 import { compare } from "bcryptjs";
