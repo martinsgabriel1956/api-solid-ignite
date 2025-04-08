@@ -1,12 +1,12 @@
-import { InvalidCredentialsError } from "@/errors/useCases/invalidCredentialsError";
-import { ICheckInsRepository } from "@/repositories/ICheckInsRepository";
-import { IUsersRepository } from "@/repositories/IUsersRepository";
 import { CheckIn } from "@prisma/client";
-import { compare } from "bcryptjs";
-
+import { ICheckInsRepository } from "@/repositories/ICheckInsRepository";
+import { IGymsRepository } from "@/repositories/IGymsRepository";
+import { ResourceNotFoundError } from "@/errors/useCases/resourceNotFoundError";
 interface CheckInUseCaseRequest {
   userId: string;
   gymId: string;
+  userLatitude: number;
+  userLongitude: number;
 }
 
 interface CheckInUseCaseResponse {
@@ -14,12 +14,21 @@ interface CheckInUseCaseResponse {
 }
 
 export class CheckInUseCase {
-  constructor(private checkInRepository: ICheckInsRepository) {}
+  constructor(
+    private checkInRepository: ICheckInsRepository,
+    private gymsRepository: IGymsRepository
+  ) {}
 
   async execute({
     gymId,
     userId,
   }: CheckInUseCaseRequest): Promise<CheckInUseCaseResponse> {
+    const gym = await this.gymsRepository.findById(gymId);
+
+    if (!gym) {
+      throw new ResourceNotFoundError();
+    }
+
     const checkInOnSameDate = await this.checkInRepository.findByUserIdOnDate(
       userId,
       new Date()
