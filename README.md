@@ -77,7 +77,7 @@
 
 - [x] The user should not be able to register yourself with the same email
 - [x] The user should not be able to do two check-ins in the same day
-- [ ] The user should not be able to do check-ins if he/she is not closer to the gym (100m)
+- [x] The user should not be able to do check-ins if he/she is not closer to the gym (100m)
 - [ ] The check-in only be able to be validated until 20 minutes after the check-in was created.
 - [ ] The check-in only be able to be validated by admin
 - [ ] The Gym only be able to be registered by admin
