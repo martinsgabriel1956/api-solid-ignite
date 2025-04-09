@@ -68,7 +68,7 @@
 - [x] It should be possible to get the number of check-ins of an logged user
 - [x] It should be possible for the logged-in user to get your own check-ins history
 - [ ] It should be possible for the logged-in user to search for nearby gyms
-- [ ] It should be possible for the logged-in user to search gyms by name
+- [x] It should be possible for the logged-in user to search gyms by name
 - [x] It should be possible for the logged-in user to realize a check-in
 - [ ] It should be possible to validate a check-in of an existing user
 - [x] It should be possible to register a new gym

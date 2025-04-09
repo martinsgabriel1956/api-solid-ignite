@@ -3,6 +3,7 @@ import { Gym, Prisma } from "@prisma/client";
 import { IGymsRepository } from "../IGymsRepository";
 
 export class InMemoryGymsRepository implements IGymsRepository {
+
   public gyms: Gym[] = [];
 
   async findById(id: string) {
@@ -13,6 +14,10 @@ export class InMemoryGymsRepository implements IGymsRepository {
     }
 
     return gym;
+  }
+
+  async searchMany(query: string, page: number) {
+    return this.gyms.filter((gym) => gym.title.includes(query)).slice((page - 1) * 20, page * 20);
   }
 
   async create(data: Prisma.GymCreateInput) {
