@@ -65,7 +65,7 @@
 - [x] It should be possible to create a new user
 - [x] It should be possible to authenticate an existing user
 - [x] It should be possible to get the perfil of an logged user
-- [ ] It should be possible to get the number of check-ins of an logged user
+- [x] It should be possible to get the number of check-ins of an logged user
 - [x] It should be possible for the logged-in user to get your own check-ins history
 - [ ] It should be possible for the logged-in user to search for nearby gyms
 - [ ] It should be possible for the logged-in user to search gyms by name
