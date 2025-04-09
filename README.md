@@ -71,7 +71,7 @@
 - [ ] It should be possible for the logged-in user to search gyms by name
 - [x] It should be possible for the logged-in user to realize a check-in
 - [ ] It should be possible to validate a check-in of an existing user
-- [ ] It should be possible to register a new gym
+- [x] It should be possible to register a new gym
 
 ### Business rules (BRs)
 
