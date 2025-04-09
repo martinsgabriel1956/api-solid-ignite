@@ -64,9 +64,9 @@
 
 - [x] It should be possible to create a new user
 - [x] It should be possible to authenticate an existing user
-- [ ] It should be possible to get the perfil of an logged user
+- [x] It should be possible to get the perfil of an logged user
 - [ ] It should be possible to get the number of check-ins of an logged user
-- [ ] It should be possible for the logged-in user to get your own check-ins history
+- [x] It should be possible for the logged-in user to get your own check-ins history
 - [ ] It should be possible for the logged-in user to search for nearby gyms
 - [ ] It should be possible for the logged-in user to search gyms by name
 - [x] It should be possible for the logged-in user to realize a check-in
@@ -86,7 +86,7 @@
 
 - [x] The user password need to be encrypted
 - [x] The application data need to be persisted in a PostgreSQL database
-- [ ] All data list need to be paginated with 20 items per page
+- [x] All data list need to be paginated with 20 items per page
 - [ ] The user must be indicated by a JWT
 
 ## :memo: LICENSE
